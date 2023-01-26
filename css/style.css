@@ -1,0 +1,224 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+    content: none;
+    
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,*:before,*:after{ 
+    box-sizing:border-box
+}
+.wrap{
+    margin: 0 auto;
+    list-style: none;
+    
+    
+}
+.banner{
+    text-align: center;
+    height: 380px;
+    background-image: url(../assets/Hero.png) ;
+    background-size: cover;
+    background-position: center;
+    z-index:1;
+    
+}
+.banner h1{
+    font-size: 50px;
+    padding-top: 90px;
+    letter-spacing: 10px;
+    color: white;
+}
+.banner .listSelection{
+    margin-top: 100px;
+    width: 50%;
+    height: 40px;
+    font-size: 25px;
+}
+.hotSelect{
+    width: 75%;
+    border-radius: 12px; 
+    box-shadow: 0px 0px 3px grey;
+    margin: 0 auto;
+    top: 350px;
+    background: white;
+    padding: 20px;
+    margin-top: -20px;
+}
+
+.hotSelect ul{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.hotSelect ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    background: gray;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 40px;
+    
+}
+.hotSelect h2{ 
+    font-size: 25px; 
+}
+.interval{
+    padding: 70px 0px;
+    text-align: center;
+    position: relative;
+}
+.interval img{
+    position: absolute;
+    z-index: 99;
+    width: 20px;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.line{
+    position: absolute;
+    height: 0px;
+    width: 90%;
+    border: 1px  rgb(137, 137, 204) dashed;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 90px;
+    
+}
+.imgBox{
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: flex-end;
+    padding: 0px 20px 10px 20px;
+    margin-bottom: 10px;
+    
+}
+.container h3{
+    font-size: 22px;
+}
+.container>li{
+    width: 464px;
+    border: solid 1px rgb(0, 0, 0, 0.3);
+    margin: 30px 0px 40px 0px;
+    box-shadow: 0px 0px 5px grey;
+}
+.phoneBox{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.ticket{
+   margin-right: 40px;
+}
+.boxContent li {
+    padding: 0px 0px 20px 15px;
+    
+    
+}
+.boxContent img {
+    width: 15px;
+    margin-right: 5px;
+}
+.ticket img{
+    width: auto;
+}
+.contents{
+    display: flex;
+    align-items: center;
+}
+
+.pageSelect{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+}
+.pageSelect li{
+    
+    border: 1px solid rgb(0, 0, 0, 0.3);
+    margin: 0px -1px 0px 0px;
+}
+.pageSelect a{
+    text-decoration: none;
+    display: block;
+    
+    color: rgba(34, 34, 117, 0.894);
+}
+.pageSelect a:hover , .active{
+    background: gainsboro;
+    color: white;
+}
+#disable{
+    color: grey;
+}
+.page-link{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+.goTop{
+    display: none !important;
+}
+.goTop.show {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 40px;
+    display: block !important;
+}
+
+.areaName{
+    text-align: center;
+    font-size: 50px;
+}
